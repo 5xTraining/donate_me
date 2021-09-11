@@ -35,6 +35,7 @@ module DonateMe
     # in config/environments, which are processed later.
     #
     config.time_zone = "Taipei"
+    config.i18n.default_locale = :"zh-TW"
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end

@@ -1,5 +1,7 @@
 # 「捐，都捐！」（金流串接練習用，請不要真的捐）
 
+![start page](./references/images/start.png)
+
 - Ruby 2.7.4
 - Rails 6.1.4.1
 - Stimulus.js
