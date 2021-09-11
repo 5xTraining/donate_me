@@ -21,4 +21,4 @@
 
 Please check [為你自己學 Ruby on Rails](https://railsbook.tw/) for more information about Ruby and Ruby on Rails.
 
-by eddie@5xcampus.com
+by 高見龍 eddie@5xcampus.com
