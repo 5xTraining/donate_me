@@ -1,5 +1,9 @@
 main {
   @apply container mx-auto;
+
+  h1.heading {
+    @apply text-4xl font-thin mb-2;
+  }
 }
 
 .notice {

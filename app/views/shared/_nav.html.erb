@@ -1,6 +1,16 @@
 <nav class="nav">
-  <div class="logo">
-    <i class="fas fa-comment-dollar text-pink-600 mr-3"></i><%= link_to "捐！都捐！", root_path %>
+  <div class="flex">
+    <div class="logo">
+      <i class="fas fa-comment-dollar text-pink-600 mr-3"></i><%= link_to "捐！都捐！", root_path %>
+    </div>
+    <ul class="menu">
+      <li class="link">
+        <%= link_to "關於", about_path %>
+      </li>
+      <li class="link">
+        <%= link_to "原始碼", source_path %>
+      </li>
+    </ul>
   </div>
   <ul class="menu">
     <% if user_signed_in? %>
