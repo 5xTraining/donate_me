@@ -2,15 +2,15 @@ main {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 
   h1.heading {
-    @apply text-4xl font-thin mb-2;
+    @apply text-4xl font-thin mb-2 py-3;
   }
 }
 
 .notice {
-  @apply flex justify-between bg-pink-400 py-3 px-6 text-xl text-pink-50;
+  @apply flex justify-between bg-pink-300 py-3 px-6 text-xl text-pink-50 rounded-sm;
 
   button {
-    @apply bg-pink-700 px-2 rounded-sm;
+    @apply px-3 rounded-sm hover:bg-pink-600;
   }
 }
 
