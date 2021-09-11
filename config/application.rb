@@ -21,8 +21,11 @@ Bundler.require(*Rails.groups)
 
 module DonateMe
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+    config.public_file_server.headers = {
+      'Cache-Control' => 'public, max-age=15552000',
+      'Expires' => 1.year.from_now.to_formatted_s(:rfc822)
+    }
 
     config.generators do |g|
       g.test_framework :rspec, fixture: false
