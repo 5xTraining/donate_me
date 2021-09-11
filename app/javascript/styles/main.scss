@@ -1,44 +1,49 @@
 main {
-  width: 80%;
-  margin: 20px auto;
-
-  h1 {
-    font-weight: lighter;
-    font-size: 80px;
-    margin-top: 10px;
-  }
+  @apply container mx-auto;
 }
 
 .notice {
-  display: flex;
-  border-radius: 2px;
-  justify-content: space-between;
-  align-items: center;
-  background-color: pink;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-  margin: 10px 0;
+  @apply flex justify-between bg-pink-400 py-3 px-6 text-xl text-pink-50;
+
+  button {
+    @apply bg-pink-700 px-2 rounded-sm;
+  }
 }
 
 nav.nav {
-  display: flex;
-  justify-content: space-between;
+  @apply my-3 flex justify-between;
 
-  a {
-    text-decoration: none;
-  }
   .logo {
-    font-size: 30px;
-    font-weight: 300;
+    @apply text-4xl font-light;
   }
 
   .menu {
-    display: flex;
-    align-items: center;
+    @apply flex items-center;
 
     .link {
-      margin-right: 10px;
+      @apply ml-4 text-lg;
+    }
+  }
+}
+
+.starter {
+  .main {
+    @apply max-w-7xl mx-auto py-12 px-4 sm:px-6 md:py-16 lg:px-8 lg:py-20;
+
+    h2 {
+      @apply text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl;
+
+      span {
+        @apply block;
+      }
+    }
+
+    .sub {
+      @apply mt-8 flex;
+
+      a {
+        @apply inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md;
+      }
     }
   }
 }

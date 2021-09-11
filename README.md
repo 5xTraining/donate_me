@@ -3,6 +3,7 @@
 - Ruby 2.7.4
 - Rails 6.1.4.1
 - Stimulus.js
+- Tailwind CSS with JIT mode, which is AWESOME!
 
 ## Steps
 
