@@ -1,0 +1,19 @@
+<nav class="nav">
+  <div class="logo">
+    <%= link_to "捐！都捐！", root_path %>
+  </div>
+  <ul class="menu">
+    <% if user_signed_in? %>
+      <li class="link">
+        <%= link_to "登出", destroy_user_session_path, method: 'delete' %>
+      </li>
+    <% else %>
+      <li class="link">
+        <%= link_to "登入", new_user_session_path %>
+      </li>
+      <li class="link">
+        <%= link_to "註冊", new_user_registration_path %>
+      </li>
+    <% end %>
+  </ul>
+</nav>

@@ -1,0 +1,44 @@
+main {
+  width: 80%;
+  margin: 20px auto;
+
+  h1 {
+    font-weight: lighter;
+    font-size: 80px;
+    margin-top: 10px;
+  }
+}
+
+.notice {
+  display: flex;
+  border-radius: 2px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+nav.nav {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+  .logo {
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+
+    .link {
+      margin-right: 10px;
+    }
+  }
+}

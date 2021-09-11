@@ -12,6 +12,8 @@
 
   <body>
     <main>
+      <%= render "shared/nav" %>
+      <%= render "shared/notice" if notice || alert %>
       <%= yield %>
     </main>
   </body>
