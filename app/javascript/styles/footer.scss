@@ -1,0 +1,11 @@
+footer.footer {
+  @apply bg-pink-600 text-white py-2 px-5 rounded-t-2xl flex sm:hidden items-center justify-between;
+
+  .menu {
+    @apply flex;
+
+    .link {
+      @apply mr-3;
+    }
+  }
+}

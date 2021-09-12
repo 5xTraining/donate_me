@@ -1,5 +1,9 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+@import "./base";
 @import "./main";
+@import "./nav";
+@import "./notice";
 @import "./form";
+@import "./footer";
 @import "tailwindcss/utilities";

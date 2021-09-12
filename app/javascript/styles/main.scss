@@ -1,32 +1,8 @@
 main {
-  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  @apply mb-auto;
 
   h1.heading {
     @apply text-4xl font-thin mb-2 py-3;
-  }
-}
-
-.notice {
-  @apply flex justify-between bg-pink-300 py-3 px-6 text-xl text-pink-50 rounded-sm;
-
-  button {
-    @apply px-3 rounded-sm hover:bg-pink-600;
-  }
-}
-
-nav.nav {
-  @apply my-3 flex justify-between;
-
-  .logo {
-    @apply text-4xl font-light;
-  }
-
-  .menu {
-    @apply flex items-center;
-
-    .link {
-      @apply ml-4 text-lg;
-    }
   }
 }
 

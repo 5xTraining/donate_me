@@ -1,0 +1,15 @@
+nav.nav {
+  @apply my-3 flex justify-between;
+
+  .logo {
+    @apply text-4xl font-light;
+  }
+
+  .menu {
+    @apply flex items-center;
+
+    .link {
+      @apply ml-4 text-lg;
+    }
+  }
+}

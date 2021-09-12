@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
   <head>
+    <meta name="description" content="A simple payment practice app, which is build with Ruby on Rails." />
     <title>Donate Me!</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -10,10 +11,11 @@
   </head>
 
   <body>
+    <%= render "shared/nav" %>
+    <%= render "shared/notice" if notice || alert %>
     <main>
-      <%= render "shared/nav" %>
-      <%= render "shared/notice" if notice || alert %>
       <%= yield %>
     </main>
+    <%= render "shared/footer" %>
   </body>
 </html>

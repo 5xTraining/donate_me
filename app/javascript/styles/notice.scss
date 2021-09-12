@@ -1,0 +1,7 @@
+.notice {
+  @apply flex justify-between bg-pink-300 py-3 px-6 text-xl text-pink-50 rounded-sm;
+
+  button {
+    @apply px-3 rounded-sm hover:bg-pink-600;
+  }
+}
