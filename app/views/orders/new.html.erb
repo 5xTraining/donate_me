@@ -1,0 +1,25 @@
+<h1 class="heading">儲值信仰</h1>
+
+<%= form_with(model: @order, html: { class: 'form' }) do |f| %>
+  <div class="field">
+    <%= f.label :username, '姓名' %>
+    <%= f.text_field :username %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount, '金額' %>
+    <%= f.number_field :amount, value: 100, min: 10 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :memo, '備註' %>
+    <%= f.text_area :memo, rows: 5 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pay_type, '付款方式' %>
+    <%= f.select :pay_type, Order.pay_types %>
+  </div>
+
+  <%= f.submit '送出', class: 'btn-action' %>
+<% end %>
