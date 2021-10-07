@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/5xTraining/sinopac-funbiz.git
+  revision: 780731b62e0a3250d5e16a03552118b1531e8b7a
+  branch: main
+  specs:
+    sinopac-funbiz (0.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -265,6 +272,7 @@ DEPENDENCIES
   rails (~> 6.1.4, >= 6.1.4.1)
   rspec-rails (~> 5.0)
   selenium-webdriver
+  sinopac-funbiz!
   spring
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
