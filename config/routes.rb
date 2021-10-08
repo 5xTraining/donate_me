@@ -6,4 +6,13 @@ Rails.application.routes.draw do
   get "source", to: "pages#source"
 
   resources :orders, only: [:new, :create]
+
+  namespace :api do
+    resources :payment, only: [] do
+      collection do
+        post :return
+        post :backend
+      end
+    end
+  end
 end
