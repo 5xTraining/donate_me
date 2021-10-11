@@ -1,0 +1,35 @@
+<h1 class="heading">儲值紀錄</h1>
+
+<section class="order">
+  <table class="order-list w-8/12">
+    <thead>
+      <tr>
+        <th>日期</th>
+        <th>訂單編號</th>
+        <th>金額</th>
+        <th>狀態</th>
+        <th>付款日期</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @orders.each do |order| %>
+        <tr>
+          <td><%= pretty_datetime(order.created_at) %></td>
+          <td><%= order.order_no %></td>
+          <td><%= number_with_delimiter(order.amount) %></td>
+          <td><%= order.state %></td>
+          <td><%= pretty_datetime(order.paid_at) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <section class="order-point w-4/12">
+    <div class="content">
+      <span>信仰點數</span>
+      <div class="point">
+        <%= number_with_delimiter(@total_points) %>
+      </div>
+    </div>
+  </section>
+</section>

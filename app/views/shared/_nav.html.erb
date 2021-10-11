@@ -15,6 +15,9 @@
   <ul class="menu">
     <% if user_signed_in? %>
       <li class="link">
+        <%= link_to "儲值紀錄", orders_path %>
+      </li>
+      <li class="link">
         <%= link_to "登出", destroy_user_session_path, method: 'delete' %>
       </li>
     <% else %>

@@ -1,0 +1,35 @@
+.order {
+  @apply flex;
+
+  table.order-list {
+    @apply table-fixed w-full;
+
+    thead {
+      th {
+        @apply bg-pink-400 py-1 text-white;
+      }
+    }
+
+    tbody {
+      tr {
+        @apply text-center;
+
+        td {
+          @apply py-1;
+        }
+      }
+    }
+  }
+
+  section.order-point {
+    @apply mx-2;
+
+    .content {
+      @apply py-6 border-2 border-dashed text-center rounded;
+
+      .point {
+        @apply text-5xl text-pink-600 mt-4;
+      }
+    }
+  }
+}

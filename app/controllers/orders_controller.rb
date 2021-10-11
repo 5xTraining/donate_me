@@ -1,6 +1,11 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!
 
+  def index
+    @orders = current_user.orders.order(id: :desc)
+    @total_points = current_user.orders.paid.sum(:amount)
+  end
+
   def new
     @order = current_user.orders.new
   end

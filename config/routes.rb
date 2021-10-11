@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "source", to: "pages#source"
 
-  resources :orders, only: [:new, :create]
+  resources :orders, only: [:new, :create, :index]
 
   namespace :api do
     resources :payment, only: [] do
