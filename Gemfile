@@ -12,6 +12,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem "devise", "~> 4.8"
 gem "figaro", "~> 1.2"
 gem "sinopac-funbiz", github: "5xTraining/sinopac-funbiz", branch: 'main'
+gem "aasm", "~> 5.2"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

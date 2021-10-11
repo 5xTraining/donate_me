@@ -7,13 +7,9 @@ class Api::PaymentController < ApplicationController
 
     if result.success?
       order = Order.find_by(order_no: result.order_no)
-      if order
-        order.update(
-          transaction_no: result.transaction_no,
-          pay_token: result.pay_token,
-          state: 'paid',
-          paid_at: Time.now
-        )
+
+      if order && order.may_pay?
+        order.pay!(result.transaction_no, result.pay_token)
       end
 
       redirect_to root_path, notice: "信仰已儲值 #{result.amount} 點！"
