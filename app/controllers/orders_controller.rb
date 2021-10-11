@@ -22,7 +22,7 @@ class OrdersController < ApplicationController
         product_name: '儲值信仰'
       )
 
-      result = gateway.pay!(order: order, pay_type: :credit_card)
+      result = gateway.pay!(order: order, pay_type: :atm)
 
       if result.success?
         redirect_to result.payment_url
