@@ -11,7 +11,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem "devise", "~> 4.8"
 gem "figaro", "~> 1.2"
-gem "sinopac-funbiz", github: "5xTraining/sinopac-funbiz", branch: 'main'
+gem 'sinopac-funbiz', '~> 0.2.0'
 gem "aasm", "~> 5.2"
 
 group :development, :test do
